@@ -1,0 +1,24 @@
+<div class = "row">
+    <h2> Simple Note List</h2>
+</div>
+
+<table class = "table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th> ID</th>
+            <th> Title </th>
+            <th> Content</th>
+            <th> Actions </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let simpleNote of simpleNotes" >
+            <td> {{ simpleNote.noteId }} </td>
+            <td> {{ simpleNote.noteTitle }} </td>
+            <td> {{ simpleNote.noteContent }} </td>
+            <td>
+                <button (click) = "deleteSimpleNote(simpleNote.noteId)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
