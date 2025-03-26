@@ -1,6 +1,32 @@
-# AstrapaySimpleNoteAngular
+# Astrapay - Simple Note Angular
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.4.
+
+## Getting Started (How to Run the Program)
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+
+* Clone the repository and navigate to the project directory.
+```bash
+   git clone https://github.com/GalihDJ/astrapay-simple-note-angular.git
+```
+
+
+* To install dependencies, run command below
+```bash
+   npm install
+```
+
+* To run the project, run command below
+```bash
+   ng serve
+```
+
+* API will be available at the URL below
+```bash
+   http://localhost:4200/simple-note
+```
 
 ## Development server
 
@@ -10,50 +36,7 @@ To start a local development server, run:
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Testing Application
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+* Before testing the application, you also need to run the backend application. Go to this repository and follow the instructions'
+https://github.com/GalihDJ/astrapay-simple-note-application
