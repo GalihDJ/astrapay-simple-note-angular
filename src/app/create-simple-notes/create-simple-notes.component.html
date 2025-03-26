@@ -4,28 +4,29 @@
             <h3 class="text-center"> Create Simple Note </h3>
             <hr />
             <div class="card-body">
-                <form (ngSubmit)="onSubmit()">
 
-                    <!-- <div class="form-group">
-                        <label> ID</label>
-                        <input type="text" class="form-control" id="noteId" ngModel="simpleNote.noteId"
-                            name="noteId">
-                    </div> -->
+                <form (ngSubmit)="onSubmit()" #noteForm="ngForm">
 
                     <div class="form-group">
                         <label> Note Title</label>
                         <input type="text" class="form-control" id="noteTitle" [(ngModel)]="simpleNote.noteTitle"
-                            name="noteTitle">
+                            name="noteTitle" required minlength="1" maxlength="100" #noteTitleRef="ngModel">
+                        <div *ngIf="noteTitleRef.invalid && noteTitleRef.touched" class="text-danger">
+                            Title is required and must not exceed 100 characters.
+                        </div>
                     </div>
 
                     <div class="form-group">
                         <label> Note Content</label>
-                        <input type="text" class="form-control" id="noteContent" [(ngModel)]="simpleNote.noteContent"
-                            name="noteContent">
+                        <textarea class="form-control" id="noteContent" [(ngModel)]="simpleNote.noteContent"
+                            name="noteContent" required minlength="1" maxlength="1000" #noteContentRef="ngModel"></textarea>
+                        <div *ngIf="noteContentRef.invalid && noteContentRef.touched" class="text-danger">
+                            Content is required and must not exceed 1000 characters.
+                        </div>
                     </div>
 
                     <br />
-                    <button class="btn btn-success" type="submit">Submit</button>
+                    <button class="btn btn-success" type="submit" [disabled]="noteForm.invalid">Submit</button>
 
                 </form>
             </div>
