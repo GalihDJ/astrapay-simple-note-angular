@@ -8,7 +8,7 @@ import { SimpleNote } from './simple-note';
 })
 export class SimpleNoteService {
 
-  private baseURL = "http://localhost:8000/api/simple-note"
+  private baseURL = "http://localhost:8080/api/simple-note"
 
   constructor(private httpClient: HttpClient) { }
 
