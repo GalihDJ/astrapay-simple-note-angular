@@ -34,8 +34,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Testing The Application
 
-* Before testing the application, you also need to run the backend application. Go to this repository and follow the instructions'
-https://github.com/GalihDJ/astrapay-simple-note-application
+* Before testing the application, you also need to run the backend application. Go to the [Java Spring Boot appliation repository](https://github.com/GalihDJ/astrapay-simple-note-application) and follow the instructions.
 
 
 ## Web Page 
