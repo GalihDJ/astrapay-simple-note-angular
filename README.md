@@ -1,6 +1,6 @@
 # Astrapay - Simple Note Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.4.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.4. based on this [tutorial](https://www.javaguides.net/2021/08/angular-crud-example.html)
 
 ## Getting Started (How to Run the Program)
 
@@ -28,15 +28,21 @@ These instructions will get you a copy of the project up and running on your loc
    http://localhost:4200/simple-note
 ```
 
-## Development server
+* Your browser should show this page
+![alt text](<screenshots/Screenshot 2025-03-26 064643.png>)
 
-To start a local development server, run:
 
-```bash
-ng serve
-```
-
-## Testing Application
+## Testing The Application
 
 * Before testing the application, you also need to run the backend application. Go to this repository and follow the instructions'
 https://github.com/GalihDJ/astrapay-simple-note-application
+
+
+## Web Page 
+
+* Web page with zero notes
+![alt text](<screenshots/Screenshot 2025-03-26 064643.png>)
+
+
+* Web page with 6 notes
+![alt text](<screenshots/Screenshot 2025-03-26 065229.png>)
